@@ -1,0 +1,7 @@
+spotify_autocomplete:
+  js:
+    js/spotify-autocomplete.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - core/jquery.ui.autocomplete

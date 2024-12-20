@@ -1,0 +1,19 @@
+uuid: 8efde087-18b2-41bd-a6e4-6a1ee7acd3c5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_name
+    - node.type.listamadur
+id: node.listamadur.field_name
+field_name: field_name
+entity_type: node
+bundle: listamadur
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

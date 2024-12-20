@@ -1,0 +1,19 @@
+uuid: 5d311c66-6544-4964-b4d4-461bcb38d247
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - node
+id: node.field_advertisement_link
+field_name: field_advertisement_link
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

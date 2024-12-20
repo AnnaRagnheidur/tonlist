@@ -1,0 +1,75 @@
+uuid: 932636c4-740d-4649-ba1b-b807c2ba64a9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.utgefandi.field_founded_date
+    - field.field.node.utgefandi.field_label_description
+    - field.field.node.utgefandi.field_label_name
+    - field.field.node.utgefandi.field_label_website
+    - field.field.node.utgefandi.field_logo
+    - node.type.utgefandi
+  module:
+    - datetime
+    - image
+    - link
+    - text
+    - user
+id: node.utgefandi.default
+targetEntityType: node
+bundle: utgefandi
+mode: default
+content:
+  field_founded_date:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_label_description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_label_name:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_label_website:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_logo:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+hidden: {  }

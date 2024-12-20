@@ -1,0 +1,51 @@
+uuid: 054b2cbc-0874-4c08-b460-7124a0d49474
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.lag.field_song_id
+    - field.field.node.lag.field_song_length
+    - field.field.node.lag.field_song_name
+    - node.type.lag
+  module:
+    - link
+    - user
+id: node.lag.default
+targetEntityType: node
+bundle: lag
+mode: default
+content:
+  field_song_id:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_song_length:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_song_name:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

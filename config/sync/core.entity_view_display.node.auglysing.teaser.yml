@@ -1,0 +1,26 @@
+uuid: 304ef606-bea0-4523-8156-bfb2abe5137c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.auglysing.field_advertisement_image
+    - field.field.node.auglysing.field_advertisement_link
+    - field.field.node.auglysing.field_shape
+    - node.type.auglysing
+  module:
+    - user
+id: node.auglysing.teaser
+targetEntityType: node
+bundle: auglysing
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_advertisement_image: true
+  field_advertisement_link: true
+  field_shape: true

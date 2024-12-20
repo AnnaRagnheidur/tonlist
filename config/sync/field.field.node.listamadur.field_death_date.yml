@@ -1,0 +1,21 @@
+uuid: 2e6b4b9c-518f-4603-b487-c13f55954577
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_death_date
+    - node.type.listamadur
+  module:
+    - datetime
+id: node.listamadur.field_death_date
+field_name: field_death_date
+entity_type: node
+bundle: listamadur
+label: 'Death Date'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

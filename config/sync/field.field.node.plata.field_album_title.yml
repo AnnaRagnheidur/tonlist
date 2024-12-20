@@ -1,0 +1,19 @@
+uuid: 34a102f4-159c-4cd8-ab0a-bb6ab5e28c0e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_album_title
+    - node.type.plata
+id: node.plata.field_album_title
+field_name: field_album_title
+entity_type: node
+bundle: plata
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

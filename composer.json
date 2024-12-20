@@ -16,12 +16,14 @@
     ],
     "require": {
         "composer/installers": "^2.0",
+        "doctrine/deprecations": "^1.1",
         "drupal/admin_toolbar": "*",
         "drupal/coffee": "*",
-        "drupal/core": "*",
+        "drupal/core": "^11.0",
         "drupal/core-composer-scaffold": "^11.0",
         "drupal/core-project-message": "^11.0",
         "drupal/core-recommended": "^11.0",
+        "drupal/devel": "^5.3",
         "drupal/gin": "*",
         "drupal/module_filter": "*",
         "drupal/pathauto": "*",
@@ -98,6 +100,11 @@
                 "  * Remove the plugin that prints this message:",
                 "      composer remove drupal/core-project-message"
             ]
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Drupal\\spotify_lookup\\": "web/modules/custom/spotify_lookup/src/"
         }
     }
 }

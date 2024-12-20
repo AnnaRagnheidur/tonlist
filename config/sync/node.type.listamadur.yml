@@ -1,0 +1,18 @@
+uuid: 30d2a306-9a52-4a91-8476-2e818ca1f641
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Artist
+type: listamadur
+description: null
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,19 @@
+uuid: c8bf3156-1339-474a-bc07-3239a90a3498
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_label_name
+    - node.type.utgefandi
+id: node.utgefandi.field_label_name
+field_name: field_label_name
+entity_type: node
+bundle: utgefandi
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

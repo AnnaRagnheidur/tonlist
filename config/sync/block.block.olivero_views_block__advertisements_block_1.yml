@@ -1,0 +1,24 @@
+uuid: 316f62dc-8f61-4c51-b71d-6e01283ee6da
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.advertisements
+  module:
+    - views
+  theme:
+    - olivero
+id: olivero_views_block__advertisements_block_1
+theme: olivero
+region: content_below
+weight: 0
+provider: null
+plugin: 'views_block:advertisements-block_1'
+settings:
+  id: 'views_block:advertisements-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }

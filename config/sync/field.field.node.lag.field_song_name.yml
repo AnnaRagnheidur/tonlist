@@ -1,0 +1,19 @@
+uuid: 2f7fbd85-97a4-43f3-9fef-57f27decb586
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_song_name
+    - node.type.lag
+id: node.lag.field_song_name
+field_name: field_song_name
+entity_type: node
+bundle: lag
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

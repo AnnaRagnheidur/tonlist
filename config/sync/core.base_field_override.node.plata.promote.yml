@@ -1,0 +1,22 @@
+uuid: 27cdc39c-bd8f-40c4-8e7d-89e539d2af22
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.plata
+id: node.plata.promote
+field_name: promote
+entity_type: node
+bundle: plata
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

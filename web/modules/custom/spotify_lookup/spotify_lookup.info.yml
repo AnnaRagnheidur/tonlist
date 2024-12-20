@@ -1,0 +1,9 @@
+name: 'Spotify Lookup'
+type: module
+description: 'Provides integration with the Spotify API.'
+package: Custom
+core_version_requirement: ^10 || ^11
+dependencies:
+  - drupal:config
+  - drupal:file
+  - drupal:node

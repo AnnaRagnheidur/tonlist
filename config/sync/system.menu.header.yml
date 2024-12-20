@@ -1,0 +1,8 @@
+uuid: 7f682a35-9fb7-4231-9c6d-d50b26fddc42
+langcode: en
+status: true
+dependencies: {  }
+id: header
+label: Header
+description: 'The header for the paths'
+locked: false

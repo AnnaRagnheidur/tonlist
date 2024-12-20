@@ -1,0 +1,29 @@
+uuid: 36134426-06a6-4cb5-b895-779692c739a9
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.newest_album
+  module:
+    - system
+    - views
+  theme:
+    - olivero
+id: olivero_views_block__newest_album_block_1
+theme: olivero
+region: highlighted
+weight: -3
+provider: null
+plugin: 'views_block:newest_album-block_1'
+settings:
+  id: 'views_block:newest_album-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /home

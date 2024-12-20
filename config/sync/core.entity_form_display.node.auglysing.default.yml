@@ -1,0 +1,79 @@
+uuid: 73f8f1c2-8d44-4ccc-8946-ee070606a304
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.auglysing.field_advertisement_image
+    - field.field.node.auglysing.field_advertisement_link
+    - field.field.node.auglysing.field_shape
+    - image.style.thumbnail
+    - node.type.auglysing
+  module:
+    - image
+    - link
+    - path
+id: node.auglysing.default
+targetEntityType: node
+bundle: auglysing
+mode: default
+content:
+  field_advertisement_image:
+    type: image_image
+    weight: 5
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_advertisement_link:
+    type: link_default
+    weight: 7
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_shape:
+    type: options_select
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    weight: 1
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 4
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    weight: 2
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  uid: true

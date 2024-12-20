@@ -1,0 +1,23 @@
+uuid: ec41af36-d476-410b-83af-48406993814a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_release_year
+    - node.type.plata
+id: node.plata.field_release_year
+field_name: field_release_year
+entity_type: node
+bundle: plata
+label: 'Release Year'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 1900
+  max: 2024
+  prefix: ''
+  suffix: ''
+field_type: integer

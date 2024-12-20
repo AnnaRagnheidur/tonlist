@@ -1,0 +1,4 @@
+services:
+  spotify_lookup.spotify_lookup_service:
+    class: Drupal\spotify_lookup\SpotifyLookupService
+    arguments: ['@config.factory', '@http_client', '@logger.channel.default']

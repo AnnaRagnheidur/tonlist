@@ -1,0 +1,87 @@
+uuid: 71791519-3f66-49fe-a60f-766068b7fb5d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.plata.field_album_title
+    - field.field.node.plata.field_cover_image
+    - field.field.node.plata.field_description
+    - field.field.node.plata.field_performer
+    - field.field.node.plata.field_publisher
+    - field.field.node.plata.field_release_year
+    - field.field.node.plata.field_songs
+    - node.type.plata
+  module:
+    - image
+    - text
+    - user
+id: node.plata.default
+targetEntityType: node
+bundle: plata
+mode: default
+content:
+  field_album_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_cover_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_performer:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_publisher:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_release_year:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_songs:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

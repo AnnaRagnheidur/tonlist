@@ -1,0 +1,31 @@
+spotify_lookup.results_page:
+  path: '/spotify/results'
+  defaults:
+    _controller: '\Drupal\spotify_lookup\Controller\SpotifyResultsController::results'
+    _title: 'Spotify Search Results'
+  requirements:
+    _permission: 'access content'
+
+spotify_lookup.search_form:
+  path: '/spotify/search'
+  defaults:
+    _form: '\Drupal\spotify_lookup\Form\SpotifySearchForm'
+    _title: 'Spotify Search'
+  requirements:
+    _permission: 'access content'
+
+spotify_lookup.detail_form:
+  path: '/spotify/details'
+  defaults:
+    _form: '\Drupal\spotify_lookup\Form\SpotifyDetailForm'
+    _title: 'Choose Album Details to Save'
+  requirements:
+    _permission: 'access content'
+
+spotify_lookup.autocomplete:
+  path: '/spotify/autocomplete'
+  defaults:
+    _controller: '\Drupal\spotify_lookup\Controller\SpotifyAutocompleteController::autocomplete'
+    _title: 'Spotify Autocomplete'
+  requirements:
+    _permission: 'access content'

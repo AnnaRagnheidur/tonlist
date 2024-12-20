@@ -1,0 +1,28 @@
+uuid: 49267802-12dc-45ef-a421-64867e1d92a5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_band_member
+    - node.type.listamadur
+id: node.listamadur.field_band_member
+field_name: field_band_member
+entity_type: node
+bundle: listamadur
+label: 'Band Members'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      listamadur: listamadur
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

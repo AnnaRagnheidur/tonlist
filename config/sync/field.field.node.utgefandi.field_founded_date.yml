@@ -1,0 +1,21 @@
+uuid: 581f8dc0-56f4-4ca7-9522-33147764c58b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_founded_date
+    - node.type.utgefandi
+  module:
+    - datetime
+id: node.utgefandi.field_founded_date
+field_name: field_founded_date
+entity_type: node
+bundle: utgefandi
+label: Founded
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

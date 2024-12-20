@@ -1,0 +1,36 @@
+uuid: e5b79531-bf77-4246-ba3a-9d10764cd648
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.listamadur.field_artist_description
+    - field.field.node.listamadur.field_artist_genre
+    - field.field.node.listamadur.field_artist_image
+    - field.field.node.listamadur.field_band_member
+    - field.field.node.listamadur.field_birthdate
+    - field.field.node.listamadur.field_death_date
+    - field.field.node.listamadur.field_name
+    - field.field.node.listamadur.field_website_link
+    - node.type.listamadur
+  module:
+    - user
+id: node.listamadur.teaser
+targetEntityType: node
+bundle: listamadur
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_artist_description: true
+  field_artist_genre: true
+  field_artist_image: true
+  field_band_member: true
+  field_birthdate: true
+  field_death_date: true
+  field_name: true
+  field_website_link: true

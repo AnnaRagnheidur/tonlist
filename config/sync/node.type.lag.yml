@@ -1,0 +1,18 @@
+uuid: fff2860b-5ea0-498f-8f9a-2cb817382641
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Song
+type: lag
+description: null
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,30 @@
+uuid: c9223875-3afa-4780-80d9-82f9b092fc55
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.duplicate_of_artists
+  module:
+    - system
+    - views
+  theme:
+    - olivero
+id: olivero_views_block__duplicate_of_artists_block_1
+theme: olivero
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:duplicate_of_artists-block_1'
+settings:
+  id: 'views_block:duplicate_of_artists-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /home

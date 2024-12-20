@@ -1,0 +1,30 @@
+uuid: 8b44d251-5b0e-424b-936f-c3be1dc34e4f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.utgefandi.field_founded_date
+    - field.field.node.utgefandi.field_label_description
+    - field.field.node.utgefandi.field_label_name
+    - field.field.node.utgefandi.field_label_website
+    - field.field.node.utgefandi.field_logo
+    - node.type.utgefandi
+  module:
+    - user
+id: node.utgefandi.teaser
+targetEntityType: node
+bundle: utgefandi
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_founded_date: true
+  field_label_description: true
+  field_label_name: true
+  field_label_website: true
+  field_logo: true

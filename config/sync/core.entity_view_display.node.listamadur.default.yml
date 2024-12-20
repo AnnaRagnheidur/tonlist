@@ -1,0 +1,103 @@
+uuid: de8e145a-0f18-4785-bf4c-c4e0ed0f3dcb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.listamadur.field_artist_description
+    - field.field.node.listamadur.field_artist_genre
+    - field.field.node.listamadur.field_artist_image
+    - field.field.node.listamadur.field_band_member
+    - field.field.node.listamadur.field_birthdate
+    - field.field.node.listamadur.field_death_date
+    - field.field.node.listamadur.field_name
+    - field.field.node.listamadur.field_website_link
+    - node.type.listamadur
+  module:
+    - datetime
+    - image
+    - link
+    - text
+    - user
+id: node.listamadur.default
+targetEntityType: node
+bundle: listamadur
+mode: default
+content:
+  field_artist_description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_artist_genre:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_artist_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_band_member:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_birthdate:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_death_date:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_name:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_website_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

@@ -1,0 +1,48 @@
+uuid: d6055071-8b42-47d3-875b-aaa22bbaca80
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.auglysing.field_advertisement_image
+    - field.field.node.auglysing.field_advertisement_link
+    - field.field.node.auglysing.field_shape
+    - node.type.auglysing
+  module:
+    - image
+    - link
+    - user
+id: node.auglysing.default
+targetEntityType: node
+bundle: auglysing
+mode: default
+content:
+  field_advertisement_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_advertisement_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_shape: true

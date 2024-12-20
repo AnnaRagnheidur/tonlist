@@ -16,16 +16,15 @@ phpunit.xml
 
 # Composer dependencies
 /vendor
-composer.lock
 /composer.phar
 
 # Drupal-specific directories
 /sites/default/files
 /sites/default/private
-/sites/default/settings.local.php
 /sites/default/*.sqlite
 /sites/default/files/caches
 /sites/default/files/php
+/sites/default/settings.local.php
 
 # Editor-specific and system files
 .vscode/
@@ -34,6 +33,3 @@ composer.lock
 *.swp
 .DS_Store
 Thumbs.db
-
-# Nightwatch settings
-nightwatch.settings.json

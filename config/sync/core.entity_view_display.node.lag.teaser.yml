@@ -1,0 +1,26 @@
+uuid: 905476ac-539f-4796-9d9a-a445dc245267
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.lag.field_song_id
+    - field.field.node.lag.field_song_length
+    - field.field.node.lag.field_song_name
+    - node.type.lag
+  module:
+    - user
+id: node.lag.teaser
+targetEntityType: node
+bundle: lag
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_song_id: true
+  field_song_length: true
+  field_song_name: true

@@ -1,0 +1,11 @@
+uuid: ecb9edd4-318e-467a-a472-16d4e0e8ac39
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: OeKGIkmZA_c-t6QLH81WNQx8gDCc1MRmxaTuQgxBByU
+id: administrator
+label: 'Kerfisstjóri (Administrator)'
+weight: 3
+is_admin: true
+permissions: {  }

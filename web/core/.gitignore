@@ -1,39 +1,37 @@
-# Core dependencies and packages
+# Ignore node_modules folder created when installing core's JavaScript
+# dependencies.
 node_modules
 yarn-error.log
-.yarn/*
-package-lock.json
 
-# Temporary and cache files
-.env
-.cspellcache
-phpstan-tmp
-.eslintcache
-.stylelint-cache
-reports
+# Ignore yarn files
+# @see https://yarnpkg.com/getting-started/qa#which-files-should-be-gitignored
+.yarn/*
+
+# Ignore overrides of core's phpcs.xml.dist and phpunit.xml.dist.
 phpcs.xml
 phpunit.xml
 
-# Composer dependencies
-/vendor
-composer.lock
-/composer.phar
+# Ignore package-lock.json that is automatically created when adding
+# dependencies by users of NPMv5.
+package-lock.json
 
-# Drupal-specific directories
-/sites/default/files
-/sites/default/private
-/sites/default/settings.local.php
-/sites/default/*.sqlite
-/sites/default/files/caches
-/sites/default/files/php
+# Ignore test reports
+reports
 
-# Editor-specific and system files
-.vscode/
-.idea/
-*.bak
-*.swp
-.DS_Store
-Thumbs.db
-
-# Nightwatch settings
+# Ignore local Nightwatch settings
 nightwatch.settings.json
+
+# Ignore dotenv
+.env
+
+# Ignore CSpell cache
+.cspellcache
+
+# Ignore phpstan cache
+phpstan-tmp
+
+# Ignore eslint cache
+.eslintcache
+
+# Ignore stylelint cache
+.stylelint-cache

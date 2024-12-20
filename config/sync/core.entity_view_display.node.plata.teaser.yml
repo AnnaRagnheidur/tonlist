@@ -1,0 +1,34 @@
+uuid: 722e510d-cbfc-4745-b688-2ad7570fb0fc
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.plata.field_album_title
+    - field.field.node.plata.field_cover_image
+    - field.field.node.plata.field_description
+    - field.field.node.plata.field_performer
+    - field.field.node.plata.field_publisher
+    - field.field.node.plata.field_release_year
+    - field.field.node.plata.field_songs
+    - node.type.plata
+  module:
+    - user
+id: node.plata.teaser
+targetEntityType: node
+bundle: plata
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_album_title: true
+  field_cover_image: true
+  field_description: true
+  field_performer: true
+  field_publisher: true
+  field_release_year: true
+  field_songs: true

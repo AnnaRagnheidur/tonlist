@@ -1,0 +1,21 @@
+uuid: ea1f6d2e-cfb6-4ef5-9834-3b62cab127e8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_birthdate
+    - node.type.listamadur
+  module:
+    - datetime
+id: node.listamadur.field_birthdate
+field_name: field_birthdate
+entity_type: node
+bundle: listamadur
+label: Birthdate
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInite49a4858f977ed5788490498f5d800d4
+class ComposerStaticInit6d95d732b089cb22465f6ddef7ca8593
 {
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
@@ -13,8 +13,8 @@ class ComposerStaticInite49a4858f977ed5788490498f5d800d4
         'e69f7f6ee287b969198c3c9d6777bd38' => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer/bootstrap.php',
         '662a729f963d39afe703c9d9b7ab4a8c' => __DIR__ . '/..' . '/symfony/polyfill-php83/bootstrap.php',
         'f598d06aa772fa33d905e87be6398fb1' => __DIR__ . '/..' . '/symfony/polyfill-intl-idn/bootstrap.php',
-        '8825ede83f2f289127722d4e842cf7e8' => __DIR__ . '/..' . '/symfony/polyfill-intl-grapheme/bootstrap.php',
         '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
+        '8825ede83f2f289127722d4e842cf7e8' => __DIR__ . '/..' . '/symfony/polyfill-intl-grapheme/bootstrap.php',
         'b6b991a57620e2fb6b2f66f03fe9ddc2' => __DIR__ . '/..' . '/symfony/string/Resources/functions.php',
         '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
         '23c18046f52bef3eea034657bafda50f' => __DIR__ . '/..' . '/symfony/polyfill-php81/bootstrap.php',
@@ -25,6 +25,7 @@ class ComposerStaticInite49a4858f977ed5788490498f5d800d4
         '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
         'def43f6c87e4f8dfd0c9e1b1bab14fe8' => __DIR__ . '/..' . '/symfony/polyfill-iconv/bootstrap.php',
         '2f69d3914119f042cca9e44442d5ce95' => __DIR__ . '/../..' . '/web/core/includes/bootstrap.inc',
+        '23f09fe3194f8c2f70923f90d6702129' => __DIR__ . '/..' . '/illuminate/collections/functions.php',
         '60799491728b879e74601d83e38b2cad' => __DIR__ . '/..' . '/illuminate/collections/helpers.php',
         '47e1160838b5e5a10346ac4084b58c23' => __DIR__ . '/..' . '/laravel/prompts/src/helpers.php',
         '801c31d8ed748cfa537fa45402288c95' => __DIR__ . '/..' . '/psy/psysh/src/functions.php',
@@ -120,14 +121,17 @@ class ComposerStaticInite49a4858f977ed5788490498f5d800d4
         'D' => 
         array (
             'Drush\\' => 6,
+            'Drupal\\spotify_lookup\\' => 22,
             'Drupal\\Core\\' => 12,
             'Drupal\\Composer\\Plugin\\Scaffold\\' => 32,
             'Drupal\\Composer\\Plugin\\ProjectMessage\\' => 38,
             'Drupal\\Component\\' => 17,
             'DrupalCodeGenerator\\' => 20,
+            'Doctrine\\Persistence\\' => 21,
             'Doctrine\\Deprecations\\' => 22,
             'Doctrine\\Common\\Lexer\\' => 22,
             'Doctrine\\Common\\Annotations\\' => 28,
+            'Doctrine\\Common\\' => 16,
             'Dflydev\\DotAccessData\\' => 22,
         ),
         'C' => 
@@ -380,6 +384,10 @@ class ComposerStaticInite49a4858f977ed5788490498f5d800d4
         array (
             0 => __DIR__ . '/..' . '/drush/drush/src',
         ),
+        'Drupal\\spotify_lookup\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/web/modules/custom/spotify_lookup/src',
+        ),
         'Drupal\\Core\\' => 
         array (
             0 => __DIR__ . '/../..' . '/web/core/lib/Drupal/Core',
@@ -400,9 +408,13 @@ class ComposerStaticInite49a4858f977ed5788490498f5d800d4
         array (
             0 => __DIR__ . '/..' . '/chi-teck/drupal-code-generator/src',
         ),
+        'Doctrine\\Persistence\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/persistence/src/Persistence',
+        ),
         'Doctrine\\Deprecations\\' => 
         array (
-            0 => __DIR__ . '/..' . '/doctrine/deprecations/lib/Doctrine/Deprecations',
+            0 => __DIR__ . '/..' . '/doctrine/deprecations/src',
         ),
         'Doctrine\\Common\\Lexer\\' => 
         array (
@@ -411,6 +423,11 @@ class ComposerStaticInite49a4858f977ed5788490498f5d800d4
         'Doctrine\\Common\\Annotations\\' => 
         array (
             0 => __DIR__ . '/..' . '/doctrine/annotations/lib/Doctrine/Common/Annotations',
+        ),
+        'Doctrine\\Common\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/event-manager/src',
+            1 => __DIR__ . '/..' . '/doctrine/common/src',
         ),
         'Dflydev\\DotAccessData\\' => 
         array (
@@ -540,10 +557,10 @@ class ComposerStaticInite49a4858f977ed5788490498f5d800d4
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInite49a4858f977ed5788490498f5d800d4::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInite49a4858f977ed5788490498f5d800d4::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInite49a4858f977ed5788490498f5d800d4::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInite49a4858f977ed5788490498f5d800d4::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit6d95d732b089cb22465f6ddef7ca8593::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit6d95d732b089cb22465f6ddef7ca8593::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit6d95d732b089cb22465f6ddef7ca8593::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInit6d95d732b089cb22465f6ddef7ca8593::$classMap;
 
         }, null, ClassLoader::class);
     }

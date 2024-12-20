@@ -1,0 +1,21 @@
+uuid: 0207b745-d256-4147-a5aa-c71d9317a494
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_shape
+    - node.type.auglysing
+  module:
+    - options
+id: node.auglysing.field_shape
+field_name: field_shape
+entity_type: node
+bundle: auglysing
+label: Shape
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

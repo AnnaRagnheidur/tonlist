@@ -1,0 +1,29 @@
+uuid: 05843832-c93f-435a-b3a4-7786b0e5d290
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_performer
+    - node.type.listamadur
+    - node.type.plata
+id: node.plata.field_performer
+field_name: field_performer
+entity_type: node
+bundle: plata
+label: Performer
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      listamadur: listamadur
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference
